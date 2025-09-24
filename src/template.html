@@ -3,10 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>test</title>
+    <title>Weather App</title>
 </head>
-<body style="background-color: bisque;">
-    <h1>hi from template</h1>
-    <button>Get Data</button>
+<body style="background-color: bisque; text-align: center;">
+    <form>
+        <label for="location">Enter a city:</label>
+        <input id = "location" name="location" type="text">
+        <button type="submit">Get Current Weather</button>
+        <div id="unitSelection" style="display:inline">
+            <input type="radio" id="us" name="unitGroup" value="us">
+            <label for="us">F</label>
+            <input type="radio" id="metric" name="unitGroup" value="metric" checked>
+            <label for="metric">C</label><br>
+        </div>
+    </form>
+    <div class = "results">
+        <p id="temp"></p>
+        <p id="feels-like"></p>
+        <p id="conditions"></p>
+        <p id="wind-speed"></p>
+    </div>
 </body>
 </html>
